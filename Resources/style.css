@@ -28,18 +28,36 @@ body {
     bottom: 0;
     right: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.171);
+    background-color: rgba(0, 0, 0, 0);
+    transition: background-color 1s;
+}
+
+.pinterest-card:hover .overlay {
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 .save-button {
     position: absolute;
     top: 15px;
-    right: 15px;
-    bottom: 330px;
-    left: 230px;
+    right: -85px;
+    width: 85px;
+    height: 55px;
     border-radius: 38%/50%;
     background-color: #E60022;
     color: white;
+    transition: transform 1s;
+}
+
+.pinterest-card:hover .save-button {
+    transform: translateX(-100px);
+}
+
+.save-button:hover {
+    cursor: pointer;
+}
+
+.save-button:active {
+    background-color: #9e0118;
 }
 
 .save-button p {
@@ -50,10 +68,15 @@ body {
 
 .bottom-buttons {
     position: absolute;
-    height: 20%;
+    height: 55px;
     right: 15px;
-    bottom: 15px;
+    bottom: -55px;
     left: 15px;
+    transition: transform 1s;
+}
+
+.pinterest-card:hover .bottom-buttons {
+    transform: translateY(-70px);
 }
 
 .pinterest-link {
@@ -63,6 +86,14 @@ body {
     bottom: 0;
     background-color: rgba(255, 255, 255, 0.805);
     border-radius: 20%/50%;
+}
+
+.pinterest-link:hover {
+    cursor: pointer;
+}
+
+.pinterest-link:active {
+    background-color: rgba(187, 187, 187, 0.805);
 }
 
 .pinterest-link p {
@@ -91,6 +122,10 @@ body {
     text-align: center;
 }
 
+.extract-button:active {
+    background-color: rgba(187, 187, 187, 0.805);
+}
+
 .extract-button i {
     margin-top: 15px;
 }
@@ -106,6 +141,16 @@ body {
     text-align: center;
 }
 
+.more-button:active {
+    background-color: rgba(187, 187, 187, 0.805);
+}
+
+
 .more-button i {
     margin-top: 15px;
+}
+
+.more-button:hover,
+.extract-button {
+    cursor: pointer;
 }
