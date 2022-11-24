@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.pinterest-card {
+    position: relative;
+    top: 25vh;
+    height: 400px;
+    width: 330px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.pinterest-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.171);
+}
+
+.save-button {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    bottom: 355px;
+    left: 255px;
+    border-radius: 20%/50%;
+    background-color: #E60022;
+}
